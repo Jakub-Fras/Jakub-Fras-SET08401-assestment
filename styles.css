@@ -1,0 +1,126 @@
+   /* Styles for the main banner */
+   .main-banner {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+  }
+  /* Styles for the main banner text */
+  .main-banner h1 {
+    font-weight: bold;
+  }
+  /* Styles for the navigation banner */
+  .nav-banner {
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 10px;
+  }
+  /* Styles for the navigation banner links */
+  .nav-banner a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+  }
+  /* Styles for the recipe of the day section */
+  .recipe-of-the-day {
+    text-align: center;
+  }
+  /* Styles for the divider line */
+  .divider {
+    border-top: 1px solid black;
+    margin: 20px 0;
+  }
+
+
+
+  /* Styles for the food images and information */
+  .food-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  .food-image {
+    width: 30%;
+    margin: 10px;
+  }
+  .food-info {
+    text-align: center;
+  }
+
+
+  /*
+ANIMATION FOR THE FOOD IMAGES:
+http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_animate.asp.html#gsc.tab=0
+https://www.w3schools.com/w3css/w3css_animate.asp
+https://www.youtube.com/watch?v=jD_8FLePHZU
+
+*/
+
+
+.food-animation {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  animation: fadein 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/*
+ANIMATION FOR THE FLAG:
+  https://www.w3schools.com/cssref/css3_pr_transform.php
+  https://www.w3schools.com/cssref/css_pr_rotate.php
+  https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.php
+  https://www.w3schools.com/css/css3_animations.asp
+*/
+
+.country-flag {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  animation: spin 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+
+
+  body {
+    background-color: #f5f5f5;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+
+  .row {
+display: flex;
+}
+
+.column {
+flex: 33.33%;
+padding: 5px;
+}
+
+.p1 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+img {
+  width: 50%;
+  margin: 30px 0;
+  border: px solid black;
+}

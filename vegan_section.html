@@ -1,0 +1,109 @@
+<!-- Declare the language as HTML -->
+<!DOCTYPE html>
+
+<!-- Openning line for HTML contents -->
+    <html>
+
+    <!-- main content of HTML, for the devider i used the ('DIV' with
+  class 'main banner' to devide the page and the p1 is the title on the banner the
+  title links back to the INDEX page) -->
+        <div class="main-banner">
+            <a href="index.html">
+              <p class="p1">Food of Europe Simple & Quick & Tasty!</p>
+            </a>
+          </div>
+
+
+    <!-- Links to diffrent sections of the site from the class "Nav Bar" -->
+<div class="nav-banner">
+<a href="vegan_section.html">Vegan</a>
+<a href="MeatLovers.html">Meat</a>
+<a href="Under15Mins.html">Under 15 Minutes</a>
+<a href="https://www.yelp.co.uk/writeareview">Review us!</a>
+
+
+
+<!-- Specifies the encoding from what i read its good practice to include
+ https://www.w3schools.com/tags/att_meta_charset.asp -->
+
+  </div>
+    <meta charset="UTF-8">
+
+    <!-- This specifies the title of the webpage and links it to the CSS stylesheet i used this https://www.w3schools.com/css/css_howto.asp
+      and this https://www.w3schools.com/html/html_css.asp -->
+    <title>Vegeterian</title>
+    <link rel="stylesheet" type="text/css" href="vegan_section.html">
+  </head>
+  <body>
+
+
+  <!-- the header for the webpage contains the title-->
+    <header>
+      <h1>Vegeterian <h1>
+    </header>
+    <main>
+
+      <!-- The main body of my webpage with the food sections
+      for each of my recepies ( refrences for whuich are in the report PART1
+      ) -->
+
+        <a href="Caponata.html">
+            <h2>Caponata</h2>
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/210211141826-15-classic-italian-dishes.jpg?q=x_0,y_0,h_1281,w_2278,c_fill/h_720,w_1280" alt="Caponata"class="food-animation">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png" alt="Flag of Italy" class="flag">
+      <p> Sweet-tasting veggies are not something typically ordered in Italy, but this extravagant Sicilian concoction will win anyone over. <p>
+        It’s a sweet and sour mix of different vegetables dressed in a sauce of tomato extract, onions, celery, capers and olives.
+        There are many Caponata variations but most use small potatoes, eggplant and bell peppers cooked with almonds, pine nuts, raisins, sugar, vinegar, extra virgin olive oil and fresh basil.
+    </main>
+
+
+
+<!-- The main body of my webpage with the food sections
+      for each of my recepies ( refrences for whuich are in the report PART1
+      ) -->
+
+      <main>
+        <a href="Maultaschen.html">
+            <h2>Maultaschen</h2>
+        <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto,h_619,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190715175625-04-germany-dishes-gallery.jpg" alt="Maultaschen"class="food-animation">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png?20111003033442" alt="Flag of Flag_of_Germany" class="flag">
+        <p>Maultaschen from Swabia are a lot like ravioli but bigger. They are typically palm-sized, square pockets of dough with fillings that run the gamut from savory to sweet and meaty to vegetarian.
+            A traditional combination is minced meat, bread crumbs, onions and spinach – all seasoned with salt, pepper and parsley. They’re often simmered and served with broth instead of sauce for a tender, creamier treat, but are sometimes pan-fried and buttered for extra richness.</p>
+      </main>
+
+
+<!-- The main body of my webpage with the food sections
+      for each of my recepies ( refrences for whuich are in the report PART1
+      ) -->
+      <main>
+        <a href="Pierogi.html">
+            <h2>Pierogi</h2>
+        <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto,h_619,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200811115525-04-best-polish-foods.jpg" alt="Pierogi"class="food-animation">
+        <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_Poland_%28bordered%29.svg/800px-Flag_of_Poland_%28bordered%29.svg.png?20061205125013" alt="Flag of Sweeden" class="flag">
+        <p>Pierogi is undoubtedly Poland’s most famous and simple comfort food.
+            But after tasting one of these delicious filled dumplings, you’re likely to find yourself craving more.
+            Perogis can be cooked or fried; stuffed with meat, vegetables, cheese, fruit, chocolate; accompanied by a sour cream topping or just butter.</p>
+    </main>
+
+
+    <!-- This Tag links back to the stylesheet with the CSS-->
+    <link rel="stylesheet" href="Main_pages_for_dishes.css">
+
+  </body>
+</html>
+
+
+<script>
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
+// source:  https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// https://www.youtube.com/watch?time_continue=4&v=FK5DEa1Hvco&embeds_euri=https%3A%2F%2Fwww.google.com%2F&source_ve_path=MjM4NTE&feature=emb_title
+
+let scrollButton = document.createElement("button");
+  scrollButton.innerHTML = "TAKE ME BACK TO TOP";
+  scrollButton.classList.add("scroll-button");
+  scrollButton.addEventListener("click", scrollToTop);
+  document.body.appendChild(scrollButton);
+</script>

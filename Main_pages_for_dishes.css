@@ -1,0 +1,98 @@
+ /* sets background to dark gray*/
+body {
+    background-color: darkgray;
+  }
+
+   /* centers the text withinb the header and the top margin of 30 pixels */
+  header {
+    text-align: center;
+    margin: 30px 0;
+  }
+ /* sets the font and colour to black */
+  h1 {
+    font-size: 36px;
+    color: black;
+  }
+ /* centers the main content of the site  */
+  main {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: black;
+    margin-top: 50px;
+  }
+
+  img {
+    width: 50%;
+    margin: 30px 0;
+    border: 5px solid white;
+  }
+
+  p {
+    font-size: 18px;
+    color: black;
+    margin: 20px 0;
+    text-align: center;
+  }
+   /* Styles for the main banner */
+   .main-banner {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+  }
+  /* Styles for the main banner text */
+  .main-banner h1 {
+    font-weight: bold;
+    color: black
+  }
+  /* Styles for the navigation banner */
+  .nav-banner {
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 10px;
+  }
+  /* Styles for the navigation banner links */
+  .nav-banner a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+  }
+  .flag {
+    width: 50px;
+    margin: 20px 40;
+  }
+  .p1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  /*
+ANIMATION FOR THE FOOD IMAGES:
+http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_animate.asp.html#gsc.tab=0
+https://www.w3schools.com/w3css/w3css_animate.asp
+https://www.youtube.com/watch?v=jD_8FLePHZU
+
+*/
+
+ /* Sets the width of the lements within the class and margin adding a border is well
+ then the fade animation is aplied the fade lasts for 2 secs the "FILL MODE"
+ will make sure it goes back to normal after its finished animating */
+.food-animation {
+  width: 50%;
+  margin: 30px 0;
+  border: 5px solid white;
+  animation: fadein 2s;
+  animation-fill-mode: forwards;
+}
+
+ /* this defines the animation fadein and will change the opacity from 0 to 1
+ this animation is used by the food animation class */
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

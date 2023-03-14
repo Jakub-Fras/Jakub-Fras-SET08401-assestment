@@ -1,0 +1,158 @@
+<!-- Declare the language as HTML -->
+<!DOCTYPE html>
+
+<!-- Openning line for HTML contents -->
+<html>
+
+<!-- metadata Main title of the webpage for the browser
+and a link to the CSS stylesheet "styles.css ( where all my
+styles are)" -->
+<head>
+  <title>Food of Europe Simple & Quick & Tasty!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- main content of HTML, for the devider i used the ('DIV' with
+  class 'main banner' to devide the page and the p1 is the title on the banner ) -->
+<body>
+  <div class="main-banner">
+    <p class ="p1">Food of Europe Simple & Quick & Tasty!</p>
+  </div>
+
+<!-- Navigation Links for the Main banner with 'href' specifying the
+distenation page -->
+  <div class="nav-banner">
+    <a href="vegan_section.html">Vegan</a>
+<a href="MeatLovers.html">Meat</a>
+<a href="Under15Mins.html">Under 15 Minutes</a>
+<a href="https://www.yelp.co.uk/writeareview">Review us!</a>
+
+
+
+
+<!-- the 'Editors choice section' bellow  with java elements
+https://www.w3schools.com/js/js_window_location.asp
+https://www.w3schools.com/jsref/prop_loc_href.asp  -->
+
+
+<!--  HTML SECTION FOR RECEPIE OF THE DAY AND A HEADING -->
+<div class="Recipe-Of-The-Day">
+<h2>Editors Choice</h2>
+
+<!-- THIS CREATES THE IMAGE ELEMENT WITH THE STYLING AND ONCLICK BAHEVIOR WHICH NAVIGATES TO
+CROPONATA.HTML ( WHICH IS ALREADY A FOOD DISH PAGE) I CAN THEN RE USE THE CLASS FOR THE ANIMATION
+Sources: https://www.w3schools.com/jsref/event_onclick.asp , https://www.w3schools.com/jsref/obj_location.asp, https://www.w3schools.com/java/java_classes.asp  -->
+  <img id="foodImage" alt="Italian" style="width: 800px; height: 300px;" onclick="window.location.href='Caponata.html';" class="food-animation">
+</div>
+
+
+<!-- starts the script
+ -->
+<script>
+  // this will be an array for the two images i use to switch between the images
+  // Sources: https://www.w3schools.com/js/js_variables.asp , https://www.w3schools.com/js/js_arrays.asp, https://www.w3schools.com/jsref/jsref_obj_array.asp ,
+  //  https://www.w3schools.com/js/js_array_methods.asp ,
+  var images = [
+    "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto,h_619,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210211141826-15-classic-italian-dishes.jpg",
+    "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto,h_619,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200811115525-04-best-polish-foods.jpg"
+  ];
+
+  // some maths, this will randomly select one of the images from the array
+  // https://www.w3schools.com/jsref/jsref_random.asp , https://www.w3schools.com/js/js_random.asp
+  var randomIndex = Math.floor(Math.random() * images.length);
+
+  // Get the image element and set its source to the selected image
+  // https://stackoverflow.com/questions/74643705/random-images-in-js , https://forum.cogsci.nl/discussion/7213/shuffle-images-from-pool
+  // https://www.w3schools.com/jsref/met_document_getelementbyid.asp  , https://www.w3schools.com/js/js_htmldom_html.asp
+  var foodImage = document.getElementById("foodImage");
+  foodImage.src = images[randomIndex];
+
+  // click behavior of the image  If the first image is selected, clicking the image
+ // https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array ,https://www.w3resource.com/javascript-exercises/javascript-array-exercise-35.php
+  // will navigate to "Caponata.html", otherwise, clicking the image will navigate to "Pierogi.html"
+  // https://stackoverflow.com/questions/58676631/how-can-i-change-onclick-function-via-if-else-statement, https://salesforce.stackexchange.com/questions/150010/if-statement-fails-in-onclick-javascript-button
+  if (randomIndex === 0) {
+    foodImage.onclick = function() {
+      window.location.href = "Caponata.html";
+    }
+  } else {
+    foodImage.onclick = function() {
+      window.location.href = "Pierogi.html";
+    }
+  }
+</script>
+
+
+  <!-- creates the page devider-->
+  <div class="divider"></div>
+
+
+  <!-- div container with the class 'Must Try' section ( used to group the contnent)-->
+  <div class="Must-Try">
+
+    <!-- Heading for Must Try-->
+    <h2>Must Try:</h2>
+
+    <!-- creates a class container with ROW and COLUMN to help with grouping-->
+        <div class="row">
+        <div class="column">
+
+          <!-- This is the actual image element used with the specified SRC and ALT is PIEROGI there is a STYLE atribute for the size-->
+        <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto,h_619,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200811115525-04-best-polish-foods.jpg" alt="Pierogi" style="width: 200px; height: 150px;"onclick="window.location.href='Pierogi.html';" class="food-animation">
+
+      <!-- creates a paragraph with the dish name amd PIEROGI is a hyperlink-->
+        <p>Dish Name: <a href="Pierogi.html">Pierogi</a></p>
+
+        <!-- -->
+        <p>Short description: Poland's most well known comfort food, pierogi are essentially
+              filled dumplings containing either meat, vegetables, cheese, fruits or chocolate.</p>
+
+              <!-- paragraph with short discription
+              FOR THE FLAG https://www.w3schools.com/html/html_classes.asp
+              https://www.w3schools.com/html/html_styles.asp
+              -->
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAADFBMVEX////cFDzup6/bAC47xqeuAAAA0UlEQVR4nO3QMQHAMAzAsLTjz3kI4qO3BEEzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPLms5mM1h5WcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICf8zMtmEUHJBe8AAAAASUVORK5CYII=" alt="Poland" style="width: 25px; height: 20px;" class="country-flag">
+        <p>Suitable for vegans: yes</p>
+
+
+
+        <!-- SAME AS ABOVE CODE SECTION-->
+      </div>
+      <div class="column">
+        <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto,h_619,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190715175625-04-germany-dishes-gallery.jpg" alt="Maultaschen" style="width: 200px; height: 150px;"onclick="window.location.href='Maultaschen.html';" class="food-animation">
+        <p>Dish Name: <a href="Maultaschen.html">Maultaschen</a></p>
+        <p>Short description: Ravioli's German cousin. A traditional filling
+           is minced meat, bread crumbs, onions and spinach. But the sky's the limit.</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAElBMVEUAAAD/zgDdAADnAADaAAD/2AAtsSEoAAAA+ElEQVR4nO3QMQGAMAAEsYeCf8tIuI0pkZANAAAAAAAAAAAAAAAAAAAAgB8dwm6CoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKewh7CbsIipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUofMGTNC8HkSxoAAAAASUVORK5CYII=" alt="Germany" style="width: 25px; height: 20px;" class="country-flag">
+        <p>Suitable for vegans: yes</p>
+      </div>
+
+
+<!-- SAME AS ABOVE CODE SECTION -->
+      <div class="column">
+        <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto,h_619,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210211141826-15-classic-italian-dishes.jpg" alt="Caponata" style="width: 200px; height: 150px;"onclick="window.location.href='Caponata.html';" class="food-animation">
+        <p>Dish Name: <a href="Caponata.html">Caponata</a></p>
+        <p>Short description: A sweet-sour blend of vegetables dressed in
+          a sauce of tomato extract, onions, celery, capers and olives.</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACqCAMAAABVlWm8AAAACVBMVEUAkkb////OKzdsRJOSAAAAxklEQVR4nO3PMQEAAAjAILV/aFPsgwbMFLZwhaTv7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v75/+HwW0qVdTeFEnAAAAAElFTkSuQmCC" alt="Italy" style="width: 25px; height: 20px;" class="country-flag">
+        <p>Suitable for vegans: yes</p>
+      </div>
+    </div>
+
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+
+  // source:  https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+  // https://www.youtube.com/watch?time_continue=4&v=FK5DEa1Hvco&embeds_euri=https%3A%2F%2Fwww.google.com%2F&source_ve_path=MjM4NTE&feature=emb_title
+
+  let scrollButton = document.createElement("button");
+      scrollButton.innerHTML = "TAKE ME BACK TO TOP";
+      scrollButton.classList.add("scroll-button");
+      scrollButton.addEventListener("click", scrollToTop);
+      document.body.appendChild(scrollButton);
+    </script>
+
+

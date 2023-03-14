@@ -1,0 +1,116 @@
+<!-- Declare the language as HTML -->
+<!DOCTYPE html>
+
+
+ <!-- main content of HTML, for the devider i used the ('DIV' with
+  class 'main banner' to devide the page and the p1 is the title on the banner the
+  title links back to the INDEX page) -->
+<div class="main-banner">
+
+  <!-- This links back to the INDEX PAGE-->
+  <a href="index.html">
+
+<!-- THE p1 STARTS A PARAGRAPH for the website title -->
+    <p class="p1">Food of Europe Simple & Quick & Tasty!</p>
+  </a>
+</div>
+
+
+<!-- Links to diffrent sections of the site from the class "Nav Bar" -->
+<div class="nav-banner">
+  <a href="vegan_section.html">Vegan</a>
+<a href="MeatLovers.html">Meat</a>
+<a href="Under15Mins.html">Under 15 Minutes</a>
+<a href="https://www.yelp.co.uk/writeareview">Review us!</a>
+
+
+
+<!-- Specifies the encoding from what i read its good practice to include
+ https://www.w3schools.com/tags/att_meta_charset.asp -->
+  </div>
+    <meta charset="UTF-8">
+      </style>
+    </head>
+    <body>
+
+
+      <div class="container">
+        <img class="image" src="https://www.themediterraneandish.com/wp-content/uploads/2020/07/caponata-recipe-4-1024x683.jpg">
+        <div class="text">
+          <h1>Time: 45 mins</h1>
+          <h1>Instructions:</h1>
+
+            <!-- start of an ordered list https://www.w3schools.com/html/html_lists_ordered.asp  -->
+          <ol>
+
+              <!-- LI adcs a new item to the list-->
+            <li> Pour the olive oil into a large heavy based saucepan or casserole, place over a medium heat and add the aubergines.
+                <li> Cook for a good 15-20 mins until they are soft. Scoop the aubergines out of the pan – you should be left with some olive oil. </li>
+                <li>Add the shallots and cook for about 5 mins until they are soft and translucent. Add the tomatoes and cook slowly, so they break down and turn to a soft mush, then add the aubergines back to the pan. </li>
+                <li> Now put in the capers, raisins, celery and vinegar, season well and cover with a lid. </li>
+                <li> Cook over a low heat for 40 mins, until all the vegetables are soft. Stir gently so it doesn’t break up too much; the stew should smell sweet and sour. </li>
+                <li>When the caponata is cooked, leave to cool slightly while you make the bruschetta. </li>
+                <li>Heat a griddle pan, drizzle the bread with olive oil and griddle until toasted and lightly charred on both sides, then rub with a garlic clove and season. </li>
+                <li>Serve the warm caponata scattered with the basil leaves and pine nuts, with bruschetta on the side. </li>
+
+          </ol>
+
+        </div>
+  <!-- SETS THE HEADING-->
+
+        <div style="margin-left: 20px;">
+            <h2>Ingredients</h2>
+            <h3>Dough</h3>
+            <ul>
+
+  <!-- SAME AS ABOVE-->
+	<li>100ml olive oil </li>
+	<li>3 large aubergines, cut into 2cm cubes</li>
+	<li>2 long shallots, chopped</li>
+	<li>4 large plum tomatoes, chopped</li>
+	<li>2 tsp caper, soaked if salted</li>
+	<li>50g raisin</li>
+	<li>4 celery sticks, sliced</li>
+	<li>50ml red wine vinegar</li>
+	<li>handful toasted pine nuts and basil leaves</li>
+	<li>8 slices ciabatta</li>
+	<li>olive oil, for drizzling</li>
+	<li>1 garlic clove</li>
+
+    <!-- SETS THE HEADING-->
+            <h2>WHY NOT LEAVE A REVIEW? :)</h2>
+            <a href="https://www.yelp.co.uk/writeareview">Review us on Yelp!</a>
+          </div>
+        </div>
+
+    <!-- CREATES THE PROPERTY OF THE FLAG THEN LINKS BACK TO CSS-->
+    </div>
+    <div class="flag">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png" style="height: 50px; width: auto;">
+    </div>
+    <div style="margin-left: 20px;">
+
+
+<!-- Links back to the CSS  -->
+
+  <link rel="stylesheet" href="individual_dish.css">
+  <body>
+
+
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+
+  // source:  https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+  // https://www.youtube.com/watch?time_continue=4&v=FK5DEa1Hvco&embeds_euri=https%3A%2F%2Fwww.google.com%2F&source_ve_path=MjM4NTE&feature=emb_title
+
+  let scrollButton = document.createElement("button");
+      scrollButton.innerHTML = "TAKE ME BACK TO TOP";
+      scrollButton.classList.add("scroll-button");
+      scrollButton.addEventListener("click", scrollToTop);
+      document.body.appendChild(scrollButton);
+    </script>
+
+

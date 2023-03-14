@@ -1,0 +1,171 @@
+
+/* will set back ground as Gray*/
+body {
+  background-color: darkgray;
+}
+
+/*centers the text within the header at 30 pixels */
+header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Anything that is H1 will be 36 pixels*/
+h1 {
+  font-size: 36px;
+  color: black;
+}
+
+/* this will center the main content of the page*/
+main {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Anything with H2 will be 24 pixels and a margin of 50*/
+h2 {
+  font-size: 24px;
+  color: black;
+  margin-top: 50px;
+}
+/* the container will apply the styles i chose with this class
+the margin between items is 30 pixels*/
+.recipe-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+/*the container will apply the styles i chose with this class
+the margin between items is 50 pixels */
+.recipe-image {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+
+/*the container will apply the styles i chose with this class
+the position between items is 50, 30 and 40 pixels */
+
+.flag {
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+/*the container will apply the styles i chose with this class
+the width 45% font at 20 and text aligned to left
+*/
+.instructions {
+  width: 45%;
+  margin-left: 30px;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Another H1 will override the previous one the new fomt is 32 and a margin of 20*/
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/*ordered list of numbered points*/
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/* over rides the previuous styles set for flags  new margin 10 and right
+margin to 400 and a top margin of 140 */
+
+.flag {
+    margin-left: 10px;
+    margin-right: 400px;
+    align-self: center;
+    margin-top: 140px;
+}
+
+/*  sets the page background to dark gray*/
+
+body {
+  background-color: darkgray;
+}
+
+
+/* centers the text and adds in a margin of 30 pixels top and bottom*/
+header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* sets the heading to 36 pixels amd black*/
+h1 {
+  font-size: 36px;
+  color: black;
+}
+/* centers the cintents of the page*/
+main {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: black;
+  margin-top: 50px;
+}
+
+/*  sets the width of image*/
+img {
+  width: 50%;
+  margin: 30px 0;
+  border: 5px solid white;
+}
+
+/*  sets font size and centers the text*/
+p {
+  font-size: 18px;
+  color: black;
+  margin: 20px 0;
+  text-align: center;
+}
+ /* Styles for the main banner */
+ .main-banner {
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+}
+/* Styles for the main banner text */
+.main-banner h1 {
+  font-weight: bold;
+  color: black
+}
+/* Styles for the navigation banner */
+.nav-banner {
+  background-color: darkseagreen;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Styles for the navigation banner links */
+.nav-banner a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+/*  sets the style elements of this to the P1 class with Arial or sans font the font is bold*/
+.p1 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
